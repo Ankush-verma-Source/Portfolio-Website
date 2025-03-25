@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ankush Verma</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">Portfolio</div>
+            <nav>
+                <ul>
+                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#action">Skills</a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a
+                            href="#projects">Projects</a>
+                    </li>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <button class="cnt-btn">
+                            <a href="#action" class="contact-button">Contact</a>
+                        </button>
+                    </div>
+
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Skills</a>
+                <a href="">Projects</a>
+                <a href="">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-container">
+            <div class="hero-img" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="images/hero.png" alt="icon">
+            </div>
+            <div class="hero-text">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey, I'm
+                    <span>Ankush&nbsp;Verma</span>
+                </h1>
+                <h3 class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a
+                    <span></span>
+                </h3>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I'm Ankush Verma, a passionate Computer Science student at Manipal University Jaipur.
+                    Currently in my second year, I'm exploring various technologies and sharpening my skills in
+                    programming and development.
+                </p>
+                <div class="hero-btn" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/Ankush-verma-Source"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:megav369@gmail.com"><i class="fa-regular fa-envelope"></i></i></a>
+                    <a href="https://www.linkedin.com/in/ankushverma109/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#action"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button>
+                        Download CV
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="content-container">
+            <div class="about-text" id="about" data-aos="fade-up" data-aos-duration="1000">
+                <!-- data-aos="fade-up" data-aos-duration="1000"-->
+                <h1>About Me</h1>
+                <p> I'm Ankush Verma, a second-year B.Tech Computer Science student at Manipal University Jaipur.
+                    Growing up in a military family has instilled in me a strong sense of discipline, adaptability,
+                    and a problem-solving mindset. My passion lies in coding, software development, and emerging
+                    technologies.
+                    I'm always eager to take on new challenges, explore innovative solutions, and collaborate on
+                    impactful projects.
+                    With a keen interest in both academics and practical applications, I strive to continuously learn
+                    and grow in the tech space.
+                </p>
+            </div>
+            <div class="projects" id="projects" data-aos="fade-up" data-aos-duration="1000">
+                <h1>PROJECTS</h1>
+                <div class="container">
+                    <div class="grid-container">
+                        <div class="grid-items">
+                            <div class="card">
+                                <img src="images/project1.png" alt="Project 1">
+                                <a href="https://portfolio-ankush-verma.netlify.app/">
+                                    <div class="card-content">
+                                        <h3>Porfolio Website</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS.init();
+        AOS.init({ offset: 0 });
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+
+</html>
